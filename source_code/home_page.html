@@ -9,7 +9,10 @@
 </head>
 
 <body>
-    <header>
+    <div class="directional">
+        <a href="#hd"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <header id="hd">
         <a href="#"><img class="img_logo" src="/images/sneaker-logo.png" alt=""></a>
         <div class="search_field">
             <form action="">
@@ -30,8 +33,16 @@
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         <div class="cart_user">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a href="#"><i class="fa-solid fa-user"></i></a>
+            <label for="cart_icon"><i class="fa-solid fa-cart-shopping"></i></label>
+            <input type="checkbox" hidden name="" id="cart_icon" class="cart_icon">
+            <label for="cart_icon" class="overlay"></label>
+            <div class="cart_field">
+                <label for="cart_icon"><i class="fa-solid fa-x"></i></label>
+                <h3>GIỎ HÀNG</h3>
+                <a href="#">MUA NGAY</a>
+            </div>
+            <label for="login"><i class="fa-solid fa-user"></i></label>
+            <input type="" hidden name="" id="login">
         </div>
     </header>
 
@@ -46,9 +57,15 @@
                 <li><a href="#"><img src="/images/vans-logo.webp" alt=""><br>VANS</a></li>
                 <li><a href="#"><img src="/images/GUCCI-logo.webp" alt=""><br>GUCCI</a></li>
             </ul>
-            <ul class="menu2">
-                <li><a href="#">CHỌN SIZE</a></li>
-            </ul>
+            <div>
+                <label for="chon_size">CHỌN SIZE</label>
+                <input type="checkbox" name="" hidden id="chon_size" class="chon_size">
+                <label for="chon_size" class="overlay"></label>
+                <div class="img_chon_size">
+                    <label for="chon_size"><i class="fa-solid fa-x"></i></label>
+                    <img src="/images/size.png" alt="">
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -212,6 +229,29 @@
 
         <div class="news">
             <p>TIN TỨC</p>
+            <div class="three_news">
+                <div class="one_new">
+                    <a href="#">
+                        <img src="/images/product.jpg" alt="">
+                        <h3>Giới trẻ Việt rộ mốt đi dép cá rô phi</h3>
+                        <p>Trào lưu của giới trẻ thường bất ngờ xuất hiện mà chẳng cần lý do. Một bài hát, một câu nói, thậm chí một chiếc áo… cũng có thể trở thành xu hướng. Mới đây, ảnh chụp đôi dép nhựa màu xanh, có hình con cá rô phi xuất hiện trên nhiều...</p>
+                    </a>
+                </div>
+                <div class="one_new">
+                    <a href="#">
+                        <img src="/images/product.jpg" alt="">
+                        <h3>Chọn giày dép lúc nào cũng vừa in chân</h3>
+                        <p>Mũi giày hay gót giày không bị biến dạng quá lâu khi bạn cầm lên và bóp nhẹ thì đó là đôi giày lý tường. Gót giày phải cứng vì nếu như mềm nó sẽ khiến gót sụt nhanh chóng và làm bạn đi lại khó khăn hơn bình thường...</p>
+                    </a>
+                </div>
+                <div class="one_new">
+                    <a href="#">
+                        <img src="/images/product.jpg" alt="">
+                        <h3>Thêm 5 đôi sneaker màu ngọt lịm</h3>
+                        <p>Nếu bạn vừa mê sneaker màu hồng lại vừa thích chất liệu da lộn thì phiên bản Gazelle màu Easy Pink mới ra chính là một nửa bạn đang tìm kiếm. Không phải hồng pastel nhàn nhạt, Easy Pink là gam màu hồng kẹo ngọt lịm ngả chút xíu hồng đất, vừa...</p>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <div class="comments">
@@ -257,7 +297,98 @@
     </section>
 
     <footer>
+        <div class="list_exten">
+            <div class="one_exten">
+                <img src="/images/freeship.png" alt="">
+                <div>
+                    <h4>Free ship</h4>
+                    <p>Free ship hóa đơn từ 1 triệu.</p>
+                </div>
+            </div>
+            <div class="one_exten">
+                <img src="/images/thanhtoan.png" alt="">
+                <div>
+                    <h4>Thanh toán</h4>
+                    <p>Kiểm tra hàng rồi thanh toán.</p>
+                </div>
+            </div>
+            <div class="one_exten">
+                <img src="/images/tuvan.png" alt="">
+                <div>
+                    <h4>Hỗ trợ tư vấn</h4>
+                    <p>Đội ngũ tư vấn viên luôn hỗ trợ nhiệt tình.</p>
+                </div>
+            </div>
+            <div class="one_exten">
+                <img src="/images/mauma.png" alt="">
+                <div>
+                    <h4>Mẫu mã</h4>
+                    <p>Luôn cập nhật những mã mới.</p>
+                </div>
+            </div>
+            <div class="one_exten">
+                <img src="/images/freeship.png" alt="">
+                <div>
+                    <h4>Shopping online</h4>
+                    <p>Mua hàng online, thử ngay tại nhà.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="infor">
+            <div class="address">
+                <img src="/images/sneaker-logo.png" alt="">
+                <p>1Sneaker là shop chuyên cung cấp các dòng sản phẩm về giày Sneaker như Adidas, Nike, Vans, Converse,...</p>
+                <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: Xuân Phương, Nam Từ Liêm, Hà Nội.</p>
+                <p><i class="fa-solid fa-phone"></i> Hotline: (+84) 905 692 314</p>
+                <p><i class="fa-regular fa-envelope"></i> Email: one_sneaker@gmail.com</p>
+                <br>
+            </div>
+
+            <div class="policy">
+                <h4>CHÍNH SÁCH</h4>
+                <a href="#">Chọn size</a>
+                <hr>
+                <a href="#">Giới thiệu</a>
+                <hr>
+                <a href="#">Hướng dẫn mua hàng</a>
+                <hr>
+                <a href="#">Đổi trả</a>
+                <hr>
+                <a href="#">Góp ý</a>
+            </div>
+
+            <div class="per_info">
+                <h4>THÔNG TIN</h4>
+                <a href="#">Về chúng tôi</a>
+                <hr>
+                <a href="#">Liên hệ</a>
+                <hr>
+                <a href="#">Tài sản</a>
+                <hr>
+                <a href="#">Mua sỉ</a>
+                <hr>
+                <a href="#">Sản phẩm yêu thích</a>
+            </div>
+
+            <div class="shipping">
+                <h4>ĐƠN VỊ VẬN CHUYỂN</h4>
+                <div>
+                    <img src="/images/lalamove.webp" alt="">
+                    <img src="/images/ghn.webp" alt="">
+                    <img src="/images/gojek.webp" alt="">
+                    <img src="/images/grab.webp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>1Sneaker</p>
+            <p>Hotline: 0389.452.962</p>
+            <p>Hợp tác & phát triển</p>
+        </div>
     </footer>
+
     <script>
         window.onscroll = function() {myFunction()};
         var nav = document.getElementById("mynav");
