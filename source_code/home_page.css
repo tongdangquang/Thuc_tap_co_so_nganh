@@ -70,7 +70,7 @@ header > a > img{
     left: 70%;
     background-color: white;
     display: none;
-    z-index: 1;
+    z-index: 10;
 }
 .cart_field a:hover{
     color: blue;
@@ -160,6 +160,7 @@ nav a:hover, label:hover{
     left: 20%;
     background-color: #fff;
     display: none;
+    z-index: 10;
 }
 .img_chon_size i, .cart_field i{
     color: black;
@@ -178,8 +179,6 @@ nav a:hover, label:hover{
 .chon_size:checked ~ .img_chon_size{
     display: block;
 }
-
-
 .sticky {
     position: fixed;
     top: 0;
