@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" href="/images/1Sneaker_logo2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1Sneaker</title>
+    <link rel="stylesheet" href="thanh_toan.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.5.1-web/css/all.min.css">
+</head>
+<body>
+  <header id="hd">
+    <a href="#"><img class="img_logo" src="/images/sneaker-logo.png" alt=""></a>
+    <div class="search_field">
+        <form action="">
+            <input type="text" name="" id="" size="35" placeholder="Tìm kiếm...">
+        </form>
+        <form action="">
+            <select name="" id="">
+                <option value="">Tất cả danh mục</option>
+                <option value="">Nike</option>
+                <option value="">MLB</option>
+                <option value="">Balenciaga</option>
+                <option value="">Adidas</option>
+                <option value="">Converse</option>
+                <option value="">Vans</option>
+                <option value="">GUCCI</option>
+            </select>
+        </form>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+    <div class="cart_user">
+        <label for="cart_icon"><i class="fa-solid fa-cart-shopping"></i></label>
+        <input type="checkbox" hidden name="" id="cart_icon" class="cart_icon">
+        <label for="cart_icon" class="overlay"></label>
+        <div class="cart_field">
+            <label for="cart_icon"><i class="fa-solid fa-x"></i></label>
+            <h3>GIỎ HÀNG</h3>
+            <a href="#">MUA NGAY</a>
+        </div>
+        <label for="login"><a href="/Login/login.html" target="_blank" style="color: black;"><i class="fa-solid fa-user"></a></i></label>
+        <input type="" hidden name="" id="login">
+    </div>
+</header>
+
+<nav id="mynav">
+    <div>
+        <ul class="menu1">
+            <li><a href="/home_page/nike_page.html"><img src="/images/nike_logo.webp" alt=""><br>GIÀY NIKE</a></li>
+                <li><a href="/home_page/mlb_page.html"><img src="/images/mlb-logo.webp" alt=""><br>GIÀY MLB</a></li>
+                <!-- <li><a href="#"><img src="/images/balenciaga-logo.webp" alt="" style="width: 20px;"><br>BALLENCIAGA</a></li> -->
+                <li><a href="/home_page/adidas_page.html"><img src="/images/adidas-logo.webp" alt="" style="width: 25px;"><br>ADIDAS</a></li>
+                <li><a href="/home_page/converse_page.html"><img src="/images/converse-logo.webp" alt="" style="width: 20px;"><br>CONVERSE</a></li>
+                <li><a href="/home_page/vans_page.html"><img src="/images/vans-logo.webp" alt=""><br>VANS</a></li>
+                <!-- <li><a href="#"><img src="/images/GUCCI-logo.webp" alt=""><br>GUCCI</a></li> -->
+        </ul>
+        <div>
+            <label for="chon_size">CHỌN SIZE</label>
+            <input type="checkbox" name="" hidden id="chon_size" class="chon_size">
+            <label for="chon_size" class="overlay"></label>
+            <div class="img_chon_size">
+                <label for="chon_size"><i class="fa-solid fa-x"></i></label>
+                <img src="/images/size.png" alt="">
+            </div>
+        </div>
+    </div>
+</nav>
+
+  <h1 style="margin: 10px 10%;">THANH TOÁN</h1>
+  <br>
+        <hr>
+        <br><br>
+        <h2 style="margin: 0px 10%;">THÔNG TIN THANH TOÁN</h2>
+        <br>
+    <div class="thanhtoan-container">
+        <form>
+            <div class="input-group">
+                <label for="ten">Tên * </label>
+                <input type="text" id="ten" name="ten" required>
+              </div>
+              <div class="input-group">
+                <label for="ho">Họ * </label>
+                <input type="text" id="ho" name="ho" required>
+              </div>
+          <div class="input-group">
+            <label for="ten_cong_ty">Tên công ty (tuỳ chọn) </label>
+            <input type="text" id="ten_cong_ty" name="ten_cong_ty" required>
+          </div>
+          <p>Quốc gia/Khu vực *</p>
+          <h3>Việt Nam</h3>
+          <div class="input-group">
+            <label for="dia_chi">Địa chỉ * </label>
+            <input type="text" id="dia_chi" name="dia_chi" required>
+          </div>
+          <div class="input-group">
+            <label for="ma_buu_dien">Mã bưu điện (tuỳ chọn) </label>
+            <input type="text" id="ma_buu_dien" name="ma_buu_dien" required>
+          </div>
+          <div class="input-group">
+            <label for="tinh_thanhpho">Tỉnh/Thành phố * </label>
+            <input type="text" id="tinh_thanhpho" name="tinh_thanhpho" required>
+          </div>
+          <div class="input-group">
+            <label for="so_dien_thoai">Số điện thoại * </label>
+            <input type="tel" id="so_dien_thoai" name="so_dien_thoai" required>
+          </div>
+          <div class="input-group">
+            <label for="email">Địa chỉ email * </label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <h2>THÔNG TIN BỔ SUNG</h2>
+          <div class="input-group">
+            <label for="ghi_chu_don_hang">Ghi chú đơn hàng (tuỳ chọn) </label>
+            <input type="ghi_chu_don_hang" id="ghi_chu_don_hang" name="ghi_chu_don_hang" required>
+          </div>
+</form>
+<div class="container">
+    <h4> ĐƠN HÀNG CỦA BẠN</h4>
+    <br>
+    <table>
+        <tr>
+            <th>SẢN PHẨM</th> <hr></hr>
+            <th>TẠM TÍNH</th>
+        </tr>
+        <tr>
+            <td>GIÀY ADIDAS ULTRABOOST 4.0 'WHITE'</td>
+            <td>680.000đ</td>
+        </tr>
+        <tr class="total">
+            <td><strong>Nhập Voucher</strong></td>
+            <td><strong><input type="text" placeholder="Nhập voucher nếu bạn có!"></strong></td>
+        </tr>
+        <tr class="total">
+            <td><strong>Tổng</strong></td>
+            <td><strong>680.000đ</strong></td>
+        </tr>
+    </table>
+    <br>
+    <form>
+      <div class="input-group note">
+        <input type="checkbox" id="transfer" name="tranfer">
+        <label for="tranfer">Chuyển khoản ngân hàng</label>
+        </div>
+        <p>Thực hiện thanh toán vào ngay tài khoản ngân 
+          <br>hàng của chúng tôi. Vui lòng sử dụng Mã đơn
+           <br>hàng của bạn trong phần Nội dung thanh
+            <br>toán. Đơn hàng sẽ được giao khi tiền đã
+             <br> chuyển. 
+            </p>
+            <br>
+            <hr>
+            <br>
+        <div class="input-group note">    
+        <input type="checkbox" id="cash" name="cash">
+        <label for="cash">Trả tiền mặt khi nhận hàng</label>
+      </div>
+      <br><br>
+      <button type="submit">ĐẶT HÀNG</button>
+      <br><br>
+      <p>Your personal data will be used to process your 
+        <br>order, support your experience throughout this
+        <br>website, and for other purposes described in our
+        <br>chính sách riêng tư.
+      </p>
+    </form>
+</div>
+</div>
+<footer>
+  <div class="list_exten">
+      <div class="one_exten">
+          <img src="/images/freeship.png" alt="">
+          <div>
+              <h4>Free ship</h4>
+              <p>Free ship hóa đơn từ 1 triệu.</p>
+          </div>
+      </div>
+      <div class="one_exten">
+          <img src="/images/thanhtoan.png" alt="">
+          <div>
+              <h4>Thanh toán</h4>
+              <p>Kiểm tra hàng rồi thanh toán.</p>
+          </div>
+      </div>
+      <div class="one_exten">
+          <img src="/images/tuvan.png" alt="">
+          <div>
+              <h4>Hỗ trợ tư vấn</h4>
+              <p>Đội ngũ tư vấn viên luôn hỗ trợ nhiệt tình.</p>
+          </div>
+      </div>
+      <div class="one_exten">
+          <img src="/images/mauma.png" alt="">
+          <div>
+              <h4>Mẫu mã</h4>
+              <p>Luôn cập nhật những mã mới.</p>
+          </div>
+      </div>
+      <div class="one_exten">
+          <img src="/images/freeship.png" alt="">
+          <div>
+              <h4>Shopping online</h4>
+              <p>Mua hàng online, thử ngay tại nhà.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="infor">
+      <div class="address">
+          <img src="/images/sneaker-logo.png" alt="">
+          <p>1Sneaker là shop chuyên cung cấp các dòng sản phẩm về giày Sneaker như Adidas, Nike, Vans, Converse,...</p>
+          <p><i class="fa-solid fa-location-dot"></i> Địa chỉ: Xuân Phương, Nam Từ Liêm, Hà Nội.</p>
+          <p><i class="fa-solid fa-phone"></i> Hotline: (+84) 905 692 314</p>
+          <p><i class="fa-regular fa-envelope"></i> Email: one_sneaker@gmail.com</p>
+          <br>
+      </div>
+
+      <div class="policy">
+          <h4>CHÍNH SÁCH</h4>
+          <a href="#">Chọn size</a>
+          <hr>
+          <a href="#">Giới thiệu</a>
+          <hr>
+          <a href="#">Hướng dẫn mua hàng</a>
+          <hr>
+          <a href="#">Đổi trả</a>
+          <hr>
+          <a href="#">Góp ý</a>
+      </div>
+
+      <div class="per_info">
+          <h4>THÔNG TIN</h4>
+          <a href="#">Về chúng tôi</a>
+          <hr>
+          <a href="#">Liên hệ</a>
+          <hr>
+          <a href="#">Tài sản</a>
+          <hr>
+          <a href="#">Mua sỉ</a>
+          <hr>
+          <a href="#">Sản phẩm yêu thích</a>
+      </div>
+
+      <div class="shipping">
+          <h4>ĐƠN VỊ VẬN CHUYỂN</h4>
+          <div>
+              <img src="/images/lalamove.webp" alt="">
+              <img src="/images/ghn.webp" alt="">
+              <img src="/images/gojek.webp" alt="">
+              <img src="/images/grab.webp" alt="">
+          </div>
+      </div>
+  </div>
+
+  <div class="contact">
+      <p>1Sneaker</p>
+      <p>Hotline: 0389.452.962</p>
+      <p>Hợp tác & phát triển</p>
+  </div>
+</footer>
+<script>
+  window.onscroll = function() {myFunction()};
+  var nav = document.getElementById("mynav");
+  var sticky = nav.offsetTop;
+  function myFunction() 
+  {
+      if (window.pageYOffset > sticky) 
+          nav.classList.add("sticky");
+      else 
+          nav.classList.remove("sticky");
+  }
+</script>
+</body>
+</html>
