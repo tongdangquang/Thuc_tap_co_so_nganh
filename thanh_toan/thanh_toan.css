@@ -46,6 +46,10 @@ header > a > img{
     color: black;
     padding: 11px 15px;
 }
+.cart_user{
+    display: flex;
+    align-items: end;
+}
 .cart_user label{
     padding: 0px 20px;
     padding-right: 5px;

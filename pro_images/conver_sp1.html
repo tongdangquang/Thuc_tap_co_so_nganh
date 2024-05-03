@@ -41,12 +41,46 @@
         <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
     </div>
     <div class="cart_user">
+      <a href="#" style="color: black;"><i class="fa-solid fa-comment" title="Liên hệ tới cửa hàng"></i></a>
         <label for="cart_icon"><i class="fa-solid fa-cart-shopping"></i></label>
         <input type="checkbox" hidden name="" id="cart_icon" class="cart_icon">
         <label for="cart_icon" class="overlay"></label>
         <div class="cart_field">
             <label for="cart_icon"><i class="fa-solid fa-x"></i></label>
             <h3>GIỎ HÀNG</h3>
+            <hr>
+                <div class="one_in_cart">
+                    <input type="checkbox" name="" id="">
+                    <img src="/pro_images/images/products/Vans/sp1/1.jpg" alt="">
+                    <div>
+                        <p>GIÀY VANS VAULT KNU SKOOL VR3 LX IMRAM POTATOP</p>
+                        <p>820.000đ</p>
+                        <p>Số lượng: <input class="soluong" value="1" type="number"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="one_in_cart">
+                    <input type="checkbox" name="" id="">
+                    <img src="/pro_images/images/products/adidas/sp1/1.jpg" alt="">
+                    <div>
+                        <p>GIÀY ADIDAS ULTRABOOST 4.0 'WHITE'</p>
+                        <p>680.000đ</p>
+                        <p>Số lượng: <input class="soluong" value="1" type="number"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="one_in_cart">
+                    <input type="checkbox" name="" id="">
+                    <img src="/pro_images/images/products/MLB/sp2/1.png" alt="">
+                    <div>
+                        <p>GIÀY MLB CHUNKY LINER BLACK PANDA</p>
+                        <p>1.000.000đ</p>
+                        <p>Số lượng: <input class="soluong" value="1" type="number"></p>
+                    </div>
+                </div>
+                <div class="total_money">
+                    <h3>Tổng thanh toán tạm tính: </h3>
+                </div>
             <a href="#">MUA NGAY</a>
         </div>
         <label for="login"><a href="/Login/login.html" target="_blank" style="color: black;"><i class="fa-solid fa-user"></a></i></label>
@@ -56,9 +90,12 @@
 
 <nav id="mynav">
     <div>
+      <div class="nav_bars">
+        <i class="fa-solid fa-bars"></i>
+    </div>
         <ul class="menu1">
-          <li><a href="/home_page/nike_page.html"><img src="/images/nike_logo.webp" alt=""><br>GIÀY NIKE</a></li>
-          <li><a href="/home_page/mlb_page.html"><img src="/images/mlb-logo.webp" alt=""><br>GIÀY MLB</a></li>
+          <li><a href="/home_page/nike_page.html"><img src="/images/nike_logo.webp" alt=""><br> NIKE</a></li>
+          <li><a href="/home_page/mlb_page.html"><img src="/images/mlb-logo.webp" alt=""><br> MLB</a></li>
           <!-- <li><a href="#"><img src="/images/balenciaga-logo.webp" alt="" style="width: 20px;"><br>BALLENCIAGA</a></li> -->
           <li><a href="/home_page/adidas_page.html"><img src="/images/adidas-logo.webp" alt="" style="width: 25px;"><br>ADIDAS</a></li>
           <li><a href="#" style="opacity: 1; text-decoration: underline;"><img src="/images/converse-logo.webp" alt="" style="width: 20px;"><br>CONVERSE</a></li>
@@ -109,7 +146,7 @@
                             <div class="resizable-box">43</div>
                         </div>
                         <input class="soluong" value="1" type="number">
-                        <button type="submit" class="mua"><b>Mua hàng</b></button> <br>
+                        <button type="submit" class="mua" onclick="thong_bao()"><b>Thêm vào giỏ hàng</b></button> <br>
                         <a href="/thanh_toan/thanh_toan.html" target="_blank">
                           <button type="submit" class="muangay">
                               <b>MUA NGAY</b> <br>

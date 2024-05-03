@@ -62,6 +62,10 @@ body > header > a > img{
   color: black;
   padding: 11px 15px;
 }
+.cart_user{
+  display: flex;
+  align-items: end;
+}
 .cart_user label{
   padding: 0px 20px;
   padding-right: 5px;
@@ -72,10 +76,10 @@ body > header > a > img{
 }
 .cart_field{
   position: fixed;
-  right: 0%;
+  right: 30%;
   top: 0%;
   height: 100vh;
-  left: 70%;
+  left: 30%;
   background-color: white;
   display: none;
   z-index: 10;
@@ -104,6 +108,44 @@ body > header > a > img{
   right: 0%;
   left: 0%;
 }
+.one_in_cart{
+  display: flex;
+  align-items: start;
+  padding: 10px 0px;
+  margin: 0px;
+}
+.one_in_cart:hover{
+  background-color: orangered;
+}
+.one_in_cart img{
+  width: 10%;
+  margin-right: 10px;
+}
+.one_in_cart input{
+  width: 30px;
+}
+.one_in_cart > input{
+  width: 18px;
+  height: 18px;
+}
+.one_in_cart p{
+  padding: 0px;
+  margin: 0px 0px 3px 0px;
+}
+.total_money{
+  position: fixed;
+  bottom: 5%;
+  background-color: yellow;
+  display: inline-block;
+}
+.total_money > h3{
+  font-family: Arial;
+  color: black;
+  text-align: left;
+  padding: 10px;
+  margin: 0px;
+}
+
 nav{
   margin-bottom: 10px;
   z-index: 10;
@@ -114,6 +156,11 @@ nav div{
   justify-content: space-between;
   padding: 0px 142px;
   background-color: black;
+}
+.nav_bars{
+  color: white;
+  font-size: 25px;
+  display: none;
 }
 .menu1{
   display: flex;
@@ -502,4 +549,148 @@ footer{
 }
 .contact > p:last-child{
   border-right: none;
+}
+
+/* thiết lập cho máy tính bảng */
+@media only screen and (min-width: 600px) and (max-width: 1440px){
+  .search_field input{
+      width: 100px;
+      background-color: #fff;
+  }
+  .search_field select{
+      width: 100px;
+      background-color: #fff;
+  }
+  .search_field{
+      width: 260px;
+  }
+  .img_logo{
+      width: 180px;
+  }
+  .cart_field{
+      left: 20%;
+      right: 20%;
+  }
+
+  nav img{
+      width: 70%;
+      padding: 0px;
+  }
+  .menu1 > li{
+      padding: 10px;
+  }
+  .one_product{
+      width: 170px;
+  }
+  .three_cmt, .three_news{
+      display: block;
+  }
+  .one_cmt, .one_new{
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .list_exten{
+      display: none;
+  }
+}
+
+/* thiết lập cho điện thoại */
+@media only screen and (max-width: 599px){
+  header{
+      display: flex;
+      align-items: center;
+      background-image: url(/images/sneaker-logo.png);
+      background-size: contain;
+
+  }
+  .search_field input{
+      width: 100px;
+      background-color: #fff;
+  }
+  .search_field select{
+      width: 100px;
+      background-color: #fff;
+  }
+  .search_field{
+      margin: 35px 0px 35px 0px;
+      padding: 0px;
+  }
+  .img_logo{
+      display: none;
+  }
+  .cart_user{
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      background-color: orangered;
+      padding: 11px;
+      margin: 35px 0px;
+      border-radius: 30px;
+  }
+  .cart_field{
+      left: 5%;
+      right: 5%;
+  }
+
+  .images_main{
+      display: block;
+  }
+
+  .nav_bars{
+      display: block;
+      position: relative;
+      padding: 10px 0px;
+  }
+  .menu1 img{
+      display: none;
+  }
+  .menu1{
+      display: block;
+      background-color: black;
+      position: absolute;
+      top: 24%;
+      display: none;
+  }
+  .menu1 > li{
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      padding: 5px 15px;
+      z-index: 10;
+      border-top: 1px solid white;
+  }
+  .nav_bars:hover ~ .menu1{
+      display: block;
+  }
+  .menu1:hover{
+      display: block;
+  }
+  .one_product{
+      width: 170px;
+  }
+  .img_chon_size{
+      position: fixed;
+      top: 10%;
+      bottom: 30%;
+      left: 10%;
+      right: 10%;
+      margin: 0px auto;
+  }
+  .img_chon_size img{
+      width: 120%;
+      margin-top: 20%;
+      padding: 0px;
+      margin-left: -8%;
+  }
+
+  .three_cmt, .three_news{
+      display: block;
+  }
+  .one_cmt, .one_new{
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .list_exten{
+      display: none;
+  }
 }

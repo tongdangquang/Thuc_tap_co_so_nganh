@@ -4,7 +4,7 @@ body{
 header, section{
     margin: 0px 10%;
 }
-
+/* mũi tên điều hướng */
 .directional i{
     color: black;
     position: fixed;
@@ -17,6 +17,8 @@ header, section{
 .directional i:hover{
     color: orangered;
 }
+
+/* header */
 header{
     display: flex;
     align-items: center;
@@ -27,6 +29,7 @@ header > a > img{
     width: 280px;
     height: 60px;
 }
+/* thanh tìm kiếm */
 .search_field{
     display: flex;
     align-items: center;
@@ -37,6 +40,7 @@ header > a > img{
     margin: 30px 0px;
 }
 .search_field input{
+    width: 300px;
     padding: 13px 0px 13px 10px;
     margin: 0px;
     border-top-left-radius: 30px;
@@ -54,6 +58,11 @@ header > a > img{
     color: black;
     padding: 11px 15px;
 }
+/* biểu tượng giỏ hàng và tài khoản */
+.cart_user{
+    display: flex;
+    align-items: end;
+}
 .cart_user label{
     padding: 0px 20px;
     padding-right: 5px;
@@ -62,12 +71,13 @@ header > a > img{
 .cart_user label:hover {
     color: gray;
 }
+/* giỏi hàng khi hiển thị */
 .cart_field{
     position: fixed;
-    right: 0%;
+    right: 30%;
     top: 0%;
     height: 100vh;
-    left: 70%;
+    left: 30%;
     background-color: white;
     display: none;
     z-index: 10;
@@ -96,13 +106,56 @@ header > a > img{
     right: 0%;
     left: 0%;
 }
+.one_in_cart{
+    display: flex;
+    align-items: start;
+    padding: 10px 0px;
+    margin: 0px;
+}
+.one_in_cart:hover{
+    background-color: orangered;
+}
+.one_in_cart img{
+    width: 10%;
+    margin-right: 10px;
+}
+.one_in_cart input{
+    width: 30px;
+}
+.one_in_cart > input{
+    width: 18px;
+    height: 18px;
+}
+.one_in_cart p{
+    padding: 0px;
+    margin: 0px 0px 3px 0px;
+}
+.total_money{
+    position: fixed;
+    bottom: 5%;
+    background-color: yellow;
+    display: inline-block;
+}
+.total_money > h3{
+    font-family: Arial;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    margin: 0px;
+}
 
+/* thanh menu */
 nav div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 142px;
+    padding: 0px 10%;
     background-color: black;
+}
+.nav_bars{
+    color: white;
+    font-size: 25px;
+    display: none;
 }
 .menu1{
     display: flex;
@@ -143,6 +196,7 @@ nav a:hover, label:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+/* lớp phủ mờ màn hình */
 .overlay{
     position: fixed;
     top: 0%;
@@ -185,12 +239,14 @@ nav a:hover, label:hover{
     width: 100%;
 }
 
+/* nội dung */
 section{
     margin: 10px 10%;
 }
 .images_main{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0px;
     padding: 0px;
 }
@@ -206,6 +262,7 @@ section{
     border: 2px solid black;
 }
 
+/* sản phẩm nổi bật */
 .san_pham_noi_bat > p, .comments > p, .news > p{
     text-align: center;
     padding: 10px;
@@ -214,34 +271,43 @@ section{
     border: 1px solid orangered;
     margin: 20px 0px;
 }
+.filter{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0px;
+    background-color: orangered;
+}
 .one_product {
     text-align: center;
     padding: 10px;
     border: 0.5px solid rgb(190, 190, 190);    
-    margin: 0px 5px;
-    width: 20%;
+    margin: 5px 18px;
+    width: 15%;
+    height: 280px;
 }
-.five_product > .one_product:first-child{
-    margin-left: 0px;
-}
-.five_product > .one_product:last-child{
-    margin-right: 0px;
-}
+
 .one_product img{
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border: 1px solid gray;
 }
-.five_product{
+.all_product{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px;
     margin: 10px 0px;
 }
+
 .one_product a{
     color: black;
     text-decoration: none;
+    padding: 0px;
+    margin: 0px;
 }
 .one_product a:hover{
     color: orangered;
@@ -270,6 +336,7 @@ section{
     border: 1px solid black;
 }
 
+/* tin tức */
 .three_news{
     display: flex;
     align-items: start;
@@ -301,6 +368,7 @@ section{
     color: orangered;
 }
 
+/* comments */
 .one_cmt{
     text-align: center;
     border: 1px solid gray;
@@ -323,12 +391,13 @@ section{
     justify-content: space-between;
 }
 
+/* footer */
 footer{
     background-color: rgb(224, 221, 221);
     margin: 20px 0px 0px 0px;
     padding: 0px;
 }
-
+/* giới thiệu */
 .one_exten{
     display: flex;
     align-items: start;
@@ -386,6 +455,8 @@ footer{
     padding: 0px;
     margin: 0px auto;
 }
+
+/* liên hệ hợp tác */
 .contact{
     font-family: Arial;
     font-weight: bold;
@@ -409,4 +480,148 @@ footer{
 }
 .contact > p:last-child{
     border-right: none;
+}
+
+/* thiết lập cho máy tính bảng */
+@media only screen and (min-width: 600px) and (max-width: 1440px){
+    .search_field input{
+        width: 100px;
+        background-color: #fff;
+    }
+    .search_field select{
+        width: 100px;
+        background-color: #fff;
+    }
+    .search_field{
+        width: 260px;
+    }
+    .img_logo{
+        width: 180px;
+    }
+    .cart_field{
+        left: 20%;
+        right: 20%;
+    }
+
+    nav img{
+        width: 70%;
+        padding: 0px;
+    }
+    .menu1 > li{
+        padding: 10px;
+    }
+    .one_product{
+        width: 170px;
+    }
+    .three_cmt, .three_news{
+        display: block;
+    }
+    .one_cmt, .one_new{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .list_exten{
+        display: none;
+    }
+}
+
+/* thiết lập cho điện thoại */
+@media only screen and (max-width: 599px){
+    header{
+        display: flex;
+        align-items: center;
+        background-image: url(/images/sneaker-logo.png);
+        background-size: contain;
+
+    }
+    .search_field input{
+        width: 100px;
+        background-color: #fff;
+    }
+    .search_field select{
+        width: 100px;
+        background-color: #fff;
+    }
+    .search_field{
+        margin: 35px 0px 35px 0px;
+        padding: 0px;
+    }
+    .img_logo{
+        display: none;
+    }
+    .cart_user{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-color: orangered;
+        padding: 11px;
+        margin: 35px 0px;
+        border-radius: 30px;
+    }
+    .cart_field{
+        left: 5%;
+        right: 5%;
+    }
+
+    .images_main{
+        display: block;
+    }
+
+    .nav_bars{
+        display: block;
+        position: relative;
+        padding: 10px 0px;
+    }
+    .menu1 img{
+        display: none;
+    }
+    .menu1{
+        display: block;
+        background-color: black;
+        position: absolute;
+        top: 24%;
+        display: none;
+    }
+    .menu1 > li{
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+        padding: 5px 15px;
+        z-index: 10;
+        border-top: 1px solid white;
+    }
+    .nav_bars:hover ~ .menu1{
+        display: block;
+    }
+    .menu1:hover{
+        display: block;
+    }
+    .one_product{
+        width: 170px;
+    }
+    .img_chon_size{
+        position: fixed;
+        top: 10%;
+        bottom: 30%;
+        left: 10%;
+        right: 10%;
+        margin: 0px auto;
+    }
+    .img_chon_size img{
+        width: 120%;
+        margin-top: 20%;
+        padding: 0px;
+        margin-left: -8%;
+    }
+
+    .three_cmt, .three_news{
+        display: block;
+    }
+    .one_cmt, .one_new{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .list_exten{
+        display: none;
+    }
 }

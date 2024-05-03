@@ -34,12 +34,46 @@
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
         <div class="cart_user">
+            <a href="#" style="color: black;"><i class="fa-solid fa-comment" title="Liên hệ tới cửa hàng"></i></a>
             <label for="cart_icon"><i class="fa-solid fa-cart-shopping"></i></label>
             <input type="checkbox" hidden name="" id="cart_icon" class="cart_icon">
             <label for="cart_icon" class="overlay"></label>
             <div class="cart_field">
                 <label for="cart_icon"><i class="fa-solid fa-x"></i></label>
                 <h3>GIỎ HÀNG</h3>
+                <hr>
+                <div class="one_in_cart">
+                    <input type="checkbox" name="" id="">
+                    <img src="/pro_images/images/products/Vans/sp1/1.jpg" alt="">
+                    <div>
+                        <p>GIÀY VANS VAULT KNU SKOOL VR3 LX IMRAM POTATOP</p>
+                        <p>820.000đ</p>
+                        <p>Số lượng: <input class="soluong" value="1" type="number"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="one_in_cart">
+                    <input type="checkbox" name="" id="">
+                    <img src="/pro_images/images/products/adidas/sp1/1.jpg" alt="">
+                    <div>
+                        <p>GIÀY ADIDAS ULTRABOOST 4.0 'WHITE'</p>
+                        <p>680.000đ</p>
+                        <p>Số lượng: <input class="soluong" value="1" type="number"></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="one_in_cart">
+                    <input type="checkbox" name="" id="">
+                    <img src="/pro_images/images/products/MLB/sp2/1.png" alt="">
+                    <div>
+                        <p>GIÀY MLB CHUNKY LINER BLACK PANDA</p>
+                        <p>1.000.000đ</p>
+                        <p>Số lượng: <input class="soluong" value="1" type="number"></p>
+                    </div>
+                </div>
+                <div class="total_money">
+                    <h3>Tổng thanh toán tạm tính: </h3>
+                </div>
                 <a href="#">MUA NGAY</a>
             </div>
             <label for="login"><i class="fa-solid fa-user"></i></label>
@@ -49,9 +83,12 @@
 
     <nav id="mynav">
         <div>
+            <div class="nav_bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <ul class="menu1">
-                <li><a href="/home_page/nike_page.html"><img src="/images/nike_logo.webp" alt=""><br>GIÀY NIKE</a></li>
-                <li><a href="/home_page/mlb_page.html"><img src="/images/mlb-logo.webp" alt=""><br>GIÀY MLB</a></li>
+                <li><a href="/home_page/nike_page.html"><img src="/images/nike_logo.webp" alt=""><br>NIKE</a></li>
+                <li><a href="/home_page/mlb_page.html"><img src="/images/mlb-logo.webp" alt=""><br>MLB</a></li>
                 <!-- <li><a href="#"><img src="/images/balenciaga-logo.webp" alt="" style="width: 20px;"><br>BALLENCIAGA</a></li> -->
                 <li><a href="/home_page/adidas_page.html"><img src="/images/adidas-logo.webp" alt="" style="width: 25px;"><br>ADIDAS</a></li>
                 <li><a href="#" style="opacity: 1; text-decoration: underline;"><img src="/images/converse-logo.webp" alt="" style="width: 20px;"><br>CONVERSE</a></li>
@@ -73,7 +110,7 @@
     <section>
         <div class="san_pham_noi_bat">
             <p style="font-size: 18px; display: inline-block; margin: 0px;">Bộ lọc:
-                <select name="" id="" style="padding: 5px;">
+                <select name="" id="" style="padding: 5px; margin-left: 5px;">
                     <option value="">Mới nhất</option>
                     <option value="">Mức độ phổ biến</option>
                     <option value="">Mức độ đánh giá</option>
@@ -81,7 +118,7 @@
                     <option value="">Mức giá: cao đến thấp</option>
                 </select>
             </p>
-            <div class="five_product">
+            <div class="all_product">
                 <div class="one_product">
                     <a href="/pro_images/conver_sp1.html"  >
                         <img src="/pro_images/images/products/conver/sp1/1.jpg" alt="">
