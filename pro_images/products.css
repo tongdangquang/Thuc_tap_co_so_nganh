@@ -64,7 +64,7 @@ body > header > a > img{
 }
 .cart_user{
   display: flex;
-  align-items: end;
+  align-items: start;
 }
 .cart_user label{
   padding: 0px 20px;
