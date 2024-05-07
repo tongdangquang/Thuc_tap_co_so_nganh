@@ -117,7 +117,8 @@ header > a > img{
 }
 .one_in_cart img{
     width: 10%;
-    margin-right: 10px;
+    margin: 0px 10px 0px 3px;
+    border: 1px solid gray;
 }
 .one_in_cart input{
     width: 30px;

@@ -54,10 +54,10 @@ header > a > img{
 }
 .cart_field{
     position: fixed;
-    right: 0%;
+    right: 30%;
     top: 0%;
     height: 100vh;
-    left: 70%;
+    left: 30%;
     background-color: white;
     display: none;
     z-index: 10;
@@ -86,6 +86,44 @@ header > a > img{
     right: 0%;
     left: 0%;
 }
+.one_in_cart{
+    display: flex;
+    align-items: start;
+    padding: 10px 0px;
+    margin: 0px;
+}
+.one_in_cart:hover{
+    background-color: orangered;
+}
+.one_in_cart img{
+    width: 10%;
+    margin: 0px 10px 0px 3px;
+    border: 1px solid gray;
+}
+.one_in_cart input{
+    width: 30px;
+}
+.one_in_cart > input{
+    width: 18px;
+    height: 18px;
+}
+.one_in_cart p{
+    padding: 0px;
+    margin: 0px 0px 3px 0px;
+}
+.total_money{
+    position: fixed;
+    bottom: 5%;
+    background-color: yellow;
+    display: inline-block;
+}
+.total_money > h3{
+    font-family: Arial;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    margin: 0px;
+}
 
 nav div{
     display: flex;
@@ -93,6 +131,11 @@ nav div{
     justify-content: space-between;
     padding: 0px 142px;
     background-color: black;
+}
+.nav_bars{
+    color: white;
+    font-size: 25px;
+    display: none;
 }
 .menu1{
     display: flex;
